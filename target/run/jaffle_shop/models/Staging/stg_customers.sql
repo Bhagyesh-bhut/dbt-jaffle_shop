@@ -1,0 +1,19 @@
+
+  
+    
+
+        create or replace transient table ANALYTICS.DEV_STAGING.stg_customers
+         as
+        (WITH CUSTOMERS AS(
+    SELECT
+        ID AS C_ID,
+        FIRST_NAME,
+        LAST_NAME
+    FROM 
+        raw.jaffle_shop_raw.customers
+)
+
+SELECT * FROM CUSTOMERS
+        );
+      
+  

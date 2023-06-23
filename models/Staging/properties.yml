@@ -1,0 +1,17 @@
+version : 2
+
+models:
+  - name : stg_customers
+    config:
+      materialized: table
+      schema : STAGING
+
+  - name : stg_orders
+    config:
+      materialized: incremental
+      schema : STAGING
+
+  - name : stg_payments
+    config:
+      materialized: incremental
+      schema : STAGING

@@ -1,0 +1,14 @@
+jaffle_shop:
+  outputs:
+    dev:
+      account: lv10177.us-east-2.aws
+      database: ANALYTICS
+      password: dbtPassword123
+      role: transform
+      schema: DEV
+      threads: 4
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev
+
